@@ -1,5 +1,102 @@
-<html>
-  <body>
-  PRo3D Landing Page coming soon!
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thomas Ortner - Computer Graphics Researcher</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Curriculum vitae and portfolio of Thomas Ortner, computer graphics researcher specialized in geospatial visualization and interactive visual analysis">
+    <meta name ="keywords" content="Thomas Ortner,curriculum vitae,cv,portfolio,computer graphics,research,researcher,visualization,visual analysis,geospatial,programmer,programming,exomars,pro3d">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+    <!--<script data-main="app" src="lib/require.js"></script>-->
+    <script>
+    
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top - 50
+            }, 1000);
+            return false;
+        }
+        }
+    });
+    });
+
+    $(function(){
+      $("#includedContent").load("manual.html"); 
+    });
+
+    function bla (d) {
+        $(".page").each(function () {this.style.display = "None"})        
+
+        d1 = document.getElementById("#" + d);
+        d1.style.display = "Block";
+         
+   
+    }
+</script>
+
+
+    }
+
+    // requirejs(["node_modules\bibtex-parse-js\bibtexParse"], function(util) {
+    // console.log(util);
+    // });
+
+
+    // var bibtexParse = require('bibtex-parse-js');
+ 
+    // var sample = bibtexParse.toJSON('@article{sample1,title={sample title}}');
+ 
+    // console.log(sample);
+
+    </script>   
+    <style>
+    /*.anchor { padding-top: 90px; }*/
+    </style>
+</head>
+<body>                       
+    <!-- top menu -->
+    <div class="ui top fixed menu fluid">
+        <a  onclick="bla('home')" class="item"><i class="icon home"></i></a>
+        <a  onclick="bla('started')" class="item">Getting Started</a>               
+        <a  onclick="bla('tech')" class="item">Technology</a>                
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="ui justified text container fluid">             
+        <div class="page" id='#home'>        
+            <img class="ui fluid image" src="./images/garden.jpg">
+            <div class="ui raised segment">            
+                <p style="font-size: 1.2rem">
+                PRo3D, short for <b>P</b>lanetary <b>Ro</b>botics <b>3D</b> Viewer, is an interactive 3D visualization tool to allow planetary scientists to work with high resolution 3D reconstructions of the Martian surface. These reconstructions stem from orbiter images and rover images and are provided by <a href="https://www.joanneum.at/">Joanneum Research</a>, while the viewer itself is developed at <a href="https://www.vrvis.at/">VRVis Vienna</a>
+                </p>
+            </div>
+            <!-- <div class="ui segment"> 
+                Geology
+            </div> -->
+        </div>
+        <div class="page" style="display:None" id='#started'>Getting Started</div>        
+        <div class="page" style="display:None"id='#tech'>Tech</div>
+        <div class="page" style="display:None" id='#people'>People</div>
+        <br>
+        <div class="ui text container fluid">
+                <div id="top" class="ui two column grid fluid">
+                    <div class="column">
+                            <img class="ui image" src="./images/vrvis.png">
+                    </div>
+                    <div class="column">
+                            <img class="ui image" src="./images/jr.png">
+                    </div>
+                </div>                                
+        </div>
+    </div>
+</body>
 </html>

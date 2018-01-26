@@ -40,23 +40,8 @@
          
    
     }
-</script>
-
-
-    }
-
-    // requirejs(["node_modules\bibtex-parse-js\bibtexParse"], function(util) {
-    // console.log(util);
-    // });
-
-
-    // var bibtexParse = require('bibtex-parse-js');
- 
-    // var sample = bibtexParse.toJSON('@article{sample1,title={sample title}}');
- 
-    // console.log(sample);
-
-    </script>   
+    </script>
+        
     <style>
     /*.anchor { padding-top: 90px; }*/
     </style>
@@ -64,7 +49,7 @@
 <body>                       
     <!-- top menu -->
     <div class="ui top fixed menu fluid">
-        <a  onclick="bla('home')" class="item"><i class="icon home"></i></a>
+        <a  onclick="bla('home')" class="item"><i class="icon home"></i>PRo3D</a>
         <a  onclick="bla('started')" class="item">Getting Started</a>               
         <a  onclick="bla('tech')" class="item">Technology</a>                
     </div>
@@ -74,17 +59,26 @@
     <div class="ui justified text container fluid">             
         <div class="page" id='#home'>        
             <img class="ui fluid image" src="./garden.jpg">
-            <div class="ui raised segment">            
+            <div class="ui raised segment">                            
                 <p style="font-size: 1.2rem">
                 PRo3D, short for <b>P</b>lanetary <b>Ro</b>botics <b>3D</b> Viewer, is an interactive 3D visualization tool to allow planetary scientists to work with high resolution 3D reconstructions of the Martian surface. These reconstructions stem from orbiter images and rover images and are provided by <a href="https://www.joanneum.at/">Joanneum Research</a>, while the viewer itself is developed at <a href="https://www.vrvis.at/">VRVis Vienna</a>
                 </p>
+                <div class="ui section divider"></div>            
+                <h2 class="ui header centered">Who uses PRo3D?</h1>
+                <p style="font-size: 1.1rem">
+                Geologists
+                
             </div>
-            <!-- <div class="ui segment"> 
-                Geology
-            </div> -->
         </div>
         <div class="page" style="display:None" id='#started'>Getting Started</div>        
-        <div class="page" style="display:None"id='#tech'>Tech</div>
+        <div class="page" style="display:None"id='#tech'>
+            <img class="ui fluid image" src="./images/aard.png">
+            <div class="ui raised segment">            
+                <p style="font-size: 1.2rem">
+                PRo3D has been developed with the <a href="https://github.com/aardvark-platform/aardvark.media">Aardvark.Media</a> framework as part of the <a href="https://github.com/aardvark-platform/aardvark.docs/wiki">Aardvark Platform</a> for scientific rendering and visualization.
+                </p>
+            </div>
+        </div>
         <div class="page" style="display:None" id='#people'>People</div>
         <br>
         <div class="ui text container fluid">
